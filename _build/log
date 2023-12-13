@@ -1,0 +1,25 @@
+# dune exec src/main.exe
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/pedro/.cache/dune/db
+# Workspace root: /home/pedro/Documentos/study/programming/ocaml-studies
+# Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/pedro/Documentos/study/programming/ocaml-studies/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /home/pedro/Documentos/study/programming/ocaml-studies/_opam/bin/ocamlc.opt -config > /tmp/dune_76a2ed_output
+$ (cd _build/default && /home/pedro/Documentos/study/programming/ocaml-studies/_opam/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.main.eobjs/byte -I src/.main.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o src/.main.eobjs/native/dune__exe__Main.cmx -c -impl src/main.ml)
+$ (cd _build/default && /home/pedro/Documentos/study/programming/ocaml-studies/_opam/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o src/main.exe src/.main.eobjs/native/dune__exe__Main.cmx)
